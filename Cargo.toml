@@ -6,3 +6,17 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bincode = "~1.3.3"
+config = "0.13.3"
+log = "~0.4.14"
+prost = "0.11.8"
+serde = "~1.0.126"
+serde_derive = "~1.0.126"
+tokio = { version = "1.26.0", features = ["full"] }
+tokio-serde = { version = "~0.8", features = ["bincode"] }
+tokio-stream = { version = "~0.1.6", features = ["net"]}
+tokio-util = { version = "0.7.7", features = ["codec"] }
+tonic = "0.9.1"
+
+[build-dependencies]
+tonic-build = "0.9.1"
