@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package placement_driver;
+
+service PlacementDriver {
+    rpc GetTimestamp (TsoRequest) returns (TsoReply);
+    rpc GetDataLocation (DataLocRequest) returns (DataLocReply);
+}
+
+message TsoRequest { }
+
+message TsoReply { }
+
+message DataLocRequest { }
+
+message DataLocReply { }
