@@ -9,7 +9,9 @@ service PlacementDriver {
 
 message TsoRequest { }
 
-message TsoReply { }
+message TsoReply {
+    uint64 timestamp = 1;
+}
 
 message DataLocRequest { }
 
