@@ -13,7 +13,7 @@ pub struct FeatherPD {
 impl FeatherPD {
     /// Creates a new FeatherPD server.
     pub fn new() -> Result<Self> {
-        Ok(Self { next_ts: Arc::new(Mutex::new(0)) })
+        Ok(Self { next_ts: Arc::new(Mutex::new(1)) })
     }
 }
 
